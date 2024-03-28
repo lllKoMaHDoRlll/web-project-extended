@@ -1,0 +1,169 @@
+header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100dvw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #424242;
+  z-index: 100;
+  padding: 0 5%;
+}
+
+#nav-outter {
+  width: 50%;
+  margin-right: 15%;
+  margin-left: 2%;
+}
+
+#nav-links {
+  list-style-type: none;
+  display: none;
+  justify-content: space-between;
+}
+
+#nav-links > li::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 2px;
+  background-color: var(--acc-color);
+  transition: 0.2s;
+}
+
+#nav-links > li:hover::after {
+  width: 100%;
+}
+
+#nav-links > li > a {
+  text-decoration: none;
+}
+
+#nav-links-dropout-button {
+  position: relative;
+  cursor: pointer;
+}
+
+#dropout-menu {
+  border-radius: 5px;
+  padding: 3px 0;
+  position: absolute;
+  display: none;
+  top: 20pt;
+  left: 0;
+  background-color: var(--dark-color);
+  z-index: 5;
+  width: 100%;
+}
+
+#dropout-menu > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+}
+
+#dropout-menu > ul > li {
+  color: #fff;
+  width: 100%;
+  padding: 5%;
+}
+
+#dropout-menu > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#dropout-menu > ul > li:hover {
+  background-color: #202020;
+}
+
+#contact-tel {
+  display: none;
+}
+
+#contact-tel > a {
+  text-decoration: none;
+}
+
+#lang-switcher-outter {
+  display: none;
+}
+
+#logo-outter > img {
+  height: 6dvh;
+  mix-blend-mode: screen;
+  filter: invert(1);
+}
+
+#nav-links-menu-mobile {
+  position: relative;
+}
+
+#menu-mobile-icon-outter {
+  padding: 10px;
+}
+
+#menu-mobile-icon {
+  font-size: 18pt;
+}
+
+#nav-links-menu-mobile-content {
+  width: 90dvw;
+  padding: 10%;
+  position: absolute;
+  height: 0px;
+  display: none;
+  bottom: max(5dvh, calc(18pt + 20px));
+  right: 0;
+  background-color: #424242;
+}
+
+#nav-links-menu-mobile-content > ul {
+  list-style: none;
+}
+
+#nav-links-menu-mobile-content > ul > li:hover {
+  background-color: #333;
+}
+
+#nav-links-menu-mobile-content > ul > li > a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: inline-block;
+}
+
+@media screen and (width >= 880px) {
+  header {
+    position: static;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    z-index: unset;
+    background-color: transparent;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  #nav-links-menu-mobile {
+    display: none;
+  }
+
+  #nav-links {
+    display: flex;
+  }
+
+  #contact-tel {
+    display: unset;
+  }
+
+  #lang-switcher-outter {
+    display: unset;
+  }
+}
