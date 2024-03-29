@@ -1,1 +1,21 @@
-<p>thumbnail works!</p>
+<section id="company-thumbnail">
+  <div id="thumbnail-body">
+    <div id="company-thumbnail-header">
+      <h1 class="text-light">Meet best coffee & fluffiest cats at Coffee
+        Cat™</h1>
+    </div>
+    <div id="company-thumbnail-body" class="text-light">
+      <p class="text-light">Coffee Cat invites you to experience new
+        feelings.</p>
+    </div>
+    <div id="pricelist-button-outter" class="text-light">
+      <button type="button" class="text-light" id="pricelist-button">Price
+        List</button>
+    </div>
+  </div>
+  <div id="thumbnail-achievements">
+    <app-thumbnail-achievement
+      *ngFor="let item of thumbnailAchievementsList"
+      [thumbnailAchievement]="item"></app-thumbnail-achievement>
+  </div>
+</section>
