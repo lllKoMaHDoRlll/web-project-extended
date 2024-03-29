@@ -1,0 +1,20 @@
+#thumbnail-achievement {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#thumbnail-achievement::before {
+  content: "";
+  background-color: var(--acc-color);
+  height: 70px;
+  width: 3px;
+  display: inline-block;
+  transform: translateX(-15px);
+  position:absolute;
+}
+
+#thumbnail-achievement > h3 {
+  font-size: 18pt;
+}
