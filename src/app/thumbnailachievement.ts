@@ -1,2 +1,4 @@
-export interface Thumbnailachievement {
+export interface ThumbnailAchievement {
+  title: string;
+  body: string;
 }
