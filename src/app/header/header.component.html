@@ -1,1 +1,51 @@
-<p>header works!</p>
+<header>
+  <div id="logo-outter">
+    <img src="assets/images/cat_logo.png" alt="Logo">
+  </div>
+  <div id="nav-outter">
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#company-thumbnail" class="text-light">About</a></li>
+        <li><a href="#company-services" class="text-light">Services</a></li>
+        <li id="nav-links-dropout-button">
+          <p
+            mat-button
+            [mat-menu-trigger-for]="menu"
+            class="text-light"
+            id="nav-links-dropout-button-inner">
+            Supports <fa-icon [icon]="faAngleDown"></fa-icon>
+          </p>
+          <mat-menu #menu="matMenu" id="dropout-menu" #dropOutMenuEl>
+            <a mat-menu-item href="#company-support">Order</a>
+            <a mat-menu-item href="#company-support">Events</a>
+            <a mat-menu-item href="#company-support">Sponsors</a>
+            <a mat-menu-item href="#company-support">Contacts</a>
+            <a mat-menu-item href="#company-support">FAQ</a>
+          </mat-menu>
+        </li>
+        <li><a href="#pricelist" class="text-light">Pricelist</a></li>
+        <li><a href="#company-reviews" class="text-light">Reviews</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="contacts-outter">
+    <span id="contact-tel">
+      <a href="tel:+79000000000" class="text-light">8-800-000-00-00</a>
+    </span>
+  </div>
+  <div id="lang-switcher-outter">
+    <span id="cur-lang" class="text-light">
+      EN
+    </span>
+    <span id="lang-switcher-icon" class="text-light">
+      <fa-icon [icon]="faAngleDown"></fa-icon>
+    </span>
+  </div>
+  <div id="nav-links-menu-mobile">
+    <div id="menu-mobile-icon-outter" class="text-light">
+      <button mat-raised-button (click)="openBottomMenuSheet()">
+        <fa-icon [icon]="faBars"></fa-icon>
+      </button>
+    </div>
+  </div>
+</header>

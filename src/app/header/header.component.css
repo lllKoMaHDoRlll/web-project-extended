@@ -47,41 +47,6 @@ header {
   cursor: pointer;
 }
 
-#dropout-menu {
-  border-radius: 5px;
-  padding: 3px 0;
-  position: absolute;
-  display: none;
-  top: 20pt;
-  left: 0;
-  background-color: var(--dark-color);
-  z-index: 5;
-  width: 100%;
-}
-
-#dropout-menu > ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  width: 100%;
-}
-
-#dropout-menu > ul > li {
-  color: #fff;
-  width: 100%;
-  padding: 5%;
-}
-
-#dropout-menu > ul > li > a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#dropout-menu > ul > li:hover {
-  background-color: #202020;
-}
-
 #contact-tel {
   display: none;
 }
@@ -110,33 +75,6 @@ header {
 
 #menu-mobile-icon {
   font-size: 18pt;
-}
-
-#nav-links-menu-mobile-content {
-  width: 90dvw;
-  padding: 10%;
-  position: absolute;
-  height: 0px;
-  display: none;
-  bottom: max(5dvh, calc(18pt + 20px));
-  right: 0;
-  background-color: #424242;
-}
-
-#nav-links-menu-mobile-content > ul {
-  list-style: none;
-}
-
-#nav-links-menu-mobile-content > ul > li:hover {
-  background-color: #333;
-}
-
-#nav-links-menu-mobile-content > ul > li > a {
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  display: inline-block;
 }
 
 @media screen and (width >= 880px) {
