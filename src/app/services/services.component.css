@@ -1,0 +1,46 @@
+#company-services {
+  background-color: #fff;
+}
+
+#services-thumbnail {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  padding-bottom: 0;
+  gap: 1rem;
+}
+
+#services-thumbnail-header-outter {
+  font-size: 20pt;
+  width: 100%;
+}
+
+#services-thumbnail-text-outter {
+  color: #424242;
+  width: 100%;
+}
+
+#services-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-content: center;
+  column-gap: 5%;
+  row-gap: 2rem;
+  padding: 3% 5%;
+}
+
+@media screen and (width >= 880px) {
+  #services-thumbnail-header-outter {
+    width: 50%;
+  }
+
+  #services-thumbnail-text-outter {
+    color: #424242;
+    width: 40%;
+  }
+
+  #services-content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
