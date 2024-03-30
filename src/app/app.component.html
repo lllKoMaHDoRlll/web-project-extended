@@ -2,7 +2,15 @@
   <app-header></app-header>
   <app-thumbnail></app-thumbnail>
   <div id="bg-video">
-    <video src="assets/videos/coffee_bg.webm" autoplay muted loop></video>
+    <video
+      autoplay
+      muted
+      loop
+      oncanplay="this.play()"
+      onloadedmetadata="this.muted = true"
+      preload="auto">
+        <source src="assets/videos/coffee_bg.webm" type="video/webm">
+    </video>
   </div>
 </section>
 <app-services></app-services>
