@@ -1,1 +1,14 @@
-<p>support-card works!</p>
+<div id="support-card">
+  <div id="support-card-num">
+      <p>0{{supportCard.id}}.</p>
+  </div>
+  <div id="support-card-header">
+      <h1>{{supportCard.title}}</h1>
+  </div>
+  <div id="support-card-body">
+      <p>{{supportCard.body}}</p>
+  </div>
+  <div id="support-card-icon">
+      <img [src]="supportCard.imageFileName" alt="Support Card Image">
+  </div>
+</div>
