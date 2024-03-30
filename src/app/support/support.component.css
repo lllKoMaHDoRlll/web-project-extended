@@ -1,0 +1,24 @@
+#company-support {
+  padding: 5%;
+}
+
+#company-support-header {
+  font-size: 20pt;
+}
+
+#support-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-content: center;
+  column-gap: 2%;
+  row-gap: 0.7rem;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+@media screen and (width >= 880px) {
+  #support-services {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

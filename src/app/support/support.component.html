@@ -1,1 +1,10 @@
-<p>support works!</p>
+<section id="company-support">
+  <div id="company-support-header">
+    <h1>Support Coffee Cat</h1>
+  </div>
+  <div id="support-services">
+    <app-support-card
+      *ngFor="let supportCard of supportCardsList"
+      [supportCard]="supportCard"></app-support-card>
+  </div>
+</section>
