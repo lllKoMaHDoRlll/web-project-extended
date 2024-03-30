@@ -1,0 +1,46 @@
+#pricelist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pricelist-header-outter > h1 {
+  font-size: 28pt;
+}
+
+#options-outter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2% 10% 2% 10%;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+#extra-option-outter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  text-align: center;
+}
+
+#extra-option-outter > p {
+  color: #777;
+}
+
+#extra-option-outter > a {
+  color: rgb(27, 4, 110);
+}
+
+@media screen and (width >= 880px) {
+  #options-outter {
+    flex-direction: row;
+  }
+
+  #extra-option-outter {
+    width: 45%;
+    padding: 0;
+  }
+}

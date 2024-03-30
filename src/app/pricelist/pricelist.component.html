@@ -1,1 +1,18 @@
-<p>pricelist works!</p>
+<section id="pricelist">
+  <div id="pricelist-header-outter">
+    <h1>Certificates</h1>
+  </div>
+  <div id="options-outter">
+    <app-pricelist-card
+      *ngFor="let pricelistCard of pricelistCardsList"
+      [pricelistCard]="pricelistCard"></app-pricelist-card>
+  </div>
+  <div id="extra-option-outter">
+    <p>
+      Didn't found your's perfect? Leave a request and we will give you personal proposal.
+    </p>
+    <a href="#">
+      Get personal proposal
+    </a>
+  </div>
+</section>
