@@ -1,0 +1,85 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.3);
+}
+
+.option-thumbnail-outter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.option-thumbnail-type-outter > h3 {
+  font-size: 12pt;
+  color: #f00;
+  letter-spacing: 0.1pt;
+}
+
+.option-thumbnail-price-outter > span {
+  font-size: 40pt;
+  font-weight: 700;
+  line-height: 30pt;
+}
+
+.option-thumbnail-period-outter {
+  margin-top: -4pt;
+}
+
+.option-thumbnail-period-outter > span {
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.option-odds-list > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option-odds-list > ul > li {
+  display: flex;
+  gap: 1rem;
+  font-size: 10pt;
+}
+
+.option-odds-list > ul > li > fa-icon {
+  color: rgb(201, 97, 97);
+  display: block;
+}
+
+.option-submission-button-outter > button {
+  width: 100%;
+  padding: 15pt;
+  background-color: transparent;
+  border: 1px solid rgb(201, 97, 97);
+  border-radius: 5px;
+  color: #f00;
+  font-size: 16pt;
+  transition: 0.3s;
+}
+
+.option-submission-button-outter > button:hover {
+  background-color: #f00;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media screen and (width >= 880px) {
+  .option {
+    max-width: 16dvw;
+    min-width: 210px;
+  }
+
+  .main-option {
+    transform: scale(1.05);
+    z-index: 2;
+    background-color: #fff;
+  }
+}

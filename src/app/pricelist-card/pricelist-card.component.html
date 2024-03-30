@@ -1,1 +1,28 @@
-<p>pricelist-card works!</p>
+<div [class]="parseCardIsMain()">
+  <div class="option-thumbnail-outter">
+    <div class="option-thumbnail-type-outter">
+      <h3>{{pricelistCard.name}}</h3>
+    </div>
+    <div class="option-thumbnail-price-outter">
+      <span>
+        {{pricelistCard.price}}$
+      </span>
+    </div>
+    <div class="option-thumbnail-period-outter">
+      <span>
+        per month
+      </span>
+    </div>
+  </div>
+  <hr>
+  <div class="option-odds-list">
+    <ul>
+      <li *ngFor="let odd of pricelistCard.odds"><fa-icon [icon]="faCheck"></fa-icon>{{odd}}</li>
+    </ul>
+  </div>
+  <div class="option-submission-button-outter">
+    <button type="button">
+      Buy now!
+    </button>
+  </div>
+</div>
