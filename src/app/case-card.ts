@@ -1,5 +1,5 @@
 export interface CaseCard {
-  imageFileName: string;
+  imageFilePath: string;
   title: string;
   date: string;
   body: string;
