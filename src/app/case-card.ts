@@ -3,4 +3,5 @@ export interface CaseCard {
   title: string;
   date: string;
   body: string;
+  type: 1 | 2;
 }
