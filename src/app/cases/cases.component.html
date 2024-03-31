@@ -1,1 +1,15 @@
-<p>cases works!</p>
+<section id="latest-cases">
+  <div id="latest-cases-header-outter">
+      <h1>Latest cases</h1>
+  </div>
+  <div id="latest-cases-cards">
+      <app-cases-card
+
+        *ngFor="let caseCard of CaseCardsList"
+        [caseCard]="caseCard"
+        [class]="parseCardType(caseCard)"></app-cases-card>
+  </div>
+  <div id="show-more-cases-button-outter">
+      <button type="button" id="show-more-cases">Show more</button>
+  </div>
+</section>
