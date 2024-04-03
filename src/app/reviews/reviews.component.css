@@ -1,0 +1,143 @@
+#company-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+#reviews-tab {
+  position: relative;
+  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  padding: 3%;
+  justify-content: space-between;
+  border-radius: 5px;
+  transition: 0.7s;
+  background-color: #fff;
+  align-items: center;
+}
+
+#reviews-tab::before {
+  content: " ";
+  position: absolute;
+  width: 80%;
+  height: 100px;
+  top: -3%;
+  left: 10%;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #eee;
+  border-radius: 5px;
+  z-index: -5;
+  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.3);
+}
+
+#reviews-tab::after {
+  content: " ";
+  position: absolute;
+  width: 60%;
+  height: 100px;
+  top: -5%;
+  left: 20%;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -10;
+  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.3);
+}
+
+#reviews-tab-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid #999;
+  padding-bottom: 1rem;
+}
+
+#review-logo > img {
+  width: 50%;
+}
+
+#review-text > p {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 14pt;
+}
+
+#review-author > p {
+  font-size: 10pt;
+  color: #999;
+}
+
+#reviews-tab-pagination {
+  margin-top: 1rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5pt;
+}
+
+#reviews-pagination-current-page {
+  font-size: 22pt;
+}
+
+#reviews-pagination-arrow-left > i,
+#reviews-pagination-arrow-right > i {
+  font-size: 30pt;
+  cursor: pointer;
+}
+
+@media screen and (width >= 880px) {
+  #company-reviews {
+    gap: 8rem;
+  }
+
+  #reviews-tab {
+    flex-direction: row;
+    align-items: unset;
+    padding-right: 0;
+  }
+
+  #reviews-tab-content {
+    border-right: 1px solid #999;
+    border-bottom: 0;
+    padding: 5%;
+    padding-top: 3%;
+    padding-right: 0;
+  }
+
+  #reviews-tab::before {
+    top: -5%;
+    left: 10%;
+    right: 0;
+  }
+
+  #reviews-tab::after {
+    top: -10%;
+    left: 20%;
+  }
+
+  #reviews-tab-content {
+    width: 70%;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  #review-logo > img {
+    width: 25%;
+  }
+
+  #review-text > p {
+    font-size: 18pt;
+  }
+
+  #reviews-tab-pagination {
+    margin-top: 0;
+  }
+}

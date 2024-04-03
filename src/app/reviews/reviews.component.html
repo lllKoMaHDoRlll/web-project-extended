@@ -1,1 +1,33 @@
-<p>reviews works!</p>
+<section id="company-reviews">
+  <div id="company-reviews-header-outter">
+      <h1>Reviews</h1>
+  </div>
+  <div id="reviews-tab">
+      <div id="reviews-tab-content">
+          <div id="review-logo">
+              <img [src]="selectedReview?.logoFilePath" alt="Logo" id="review-logo-inner">
+          </div>
+          <div id="review-text">
+              <p id="review-text-inner">
+                  {{selectedReview?.text}}
+              </p>
+          </div>
+          <div id="review-author">
+              <p id="review-author-inner">
+                  {{selectedReview?.author}}
+              </p>
+          </div>
+      </div>
+      <div id="reviews-tab-pagination">
+          <div id="reviews-pagination-arrow-left" (click)="showPrevReview()">
+              <fa-icon [icon]="faAngleLeft"></fa-icon>
+          </div>
+          <div id="reviews-pagination-current-page">
+              <p><span id="cur-page">{{currentPageIndex + 1}}</span>/<span id="total-pages">{{totalPages}}</span></p>
+          </div>
+          <div id="reviews-pagination-arrow-right" (click)="showNextReview()">
+              <fa-icon [icon]="faAngleRight"></fa-icon>
+          </div>
+      </div>
+  </div>
+</section>
