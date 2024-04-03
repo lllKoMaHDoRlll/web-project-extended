@@ -1,1 +1,12 @@
-<p>team works!</p>
+<section id="company-team">
+    <div id="company-team-header-outter">
+        <h1>
+            Our team
+        </h1>
+    </div>
+    <div id="company-employees">
+        <app-team-employee *ngFor="let teamEmployee of teamEmployeesList" [teamEmployee]="teamEmployee">
+        </app-team-employee>
+
+    </div>
+</section>
