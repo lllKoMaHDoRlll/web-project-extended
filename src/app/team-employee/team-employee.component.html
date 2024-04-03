@@ -1,1 +1,11 @@
-<p>team-employee works!</p>
+<div class="employee-card">
+    <div class="employee-card-img">
+        <img [src]="teamEmployee.imageFilePath" alt="Employee Photo">
+    </div>
+    <div class="employee-card-name">
+        <h1>{{teamEmployee.name}}</h1>
+    </div>
+    <div class="employee-card-body">
+        <p>{{teamEmployee.position}}</p>
+    </div>
+</div>
