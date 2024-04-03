@@ -87,9 +87,8 @@
   font-size: 22pt;
 }
 
-#reviews-pagination-arrow-left > i,
-#reviews-pagination-arrow-right > i {
-  font-size: 30pt;
+fa-icon {
+  font-size: 26pt;
   cursor: pointer;
 }
 
