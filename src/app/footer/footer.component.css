@@ -28,7 +28,7 @@ footer > img {
 
 @media screen and (width >= 880px) {
   footer > img {
-    display: static;
+    display: unset;
   }
 
   footer {
