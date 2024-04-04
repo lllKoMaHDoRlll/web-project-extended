@@ -1,1 +1,26 @@
-<p>clients works!</p>
+
+
+<section id="company-clients">
+  <div id="company-clients-header-outter">
+      <h1>Our clients</h1>
+  </div>
+  <div id="company-clients-body-outter">
+      <p>
+          Our clients get the best service, fast service, amazing experience with us. Hurry up and join our huge number of clients.
+      </p>
+  </div>
+  <div id="company-clients-gallery-1">
+    <splide [options]="slider1Options" containerClass="slider">
+      <splide-slide *ngFor="let imageFilePath of slider1ImagesList">
+        <img [src]="imageFilePath" alt="Client Photo">
+      </splide-slide>
+    </splide>
+  </div>
+  <div id="company-clients-gallery-2">
+    <splide [options]="slider2Options" #slider2>
+      <splide-slide *ngFor="let imageFilePath of slider2ImagesList">
+        <img [src]="imageFilePath" alt="Client Photo">
+      </splide-slide>
+    </splide>
+  </div>
+</section>
