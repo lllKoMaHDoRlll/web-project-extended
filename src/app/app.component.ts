@@ -12,6 +12,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ClientsComponent } from './clients/clients.component';
 import { RequestFormComponent } from './request-form/request-form.component';
 import { FooterComponent } from './footer/footer.component';
+import { ModalFormComponent } from './modal-form/modal-form.component';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     ReviewsComponent,
     ClientsComponent,
     RequestFormComponent,
-    FooterComponent
+    FooterComponent,
+    ModalFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
