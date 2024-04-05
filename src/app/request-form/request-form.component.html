@@ -1,1 +1,45 @@
-<p>request-form works!</p>
+<section id="company-request">
+  <div id="company-request-content-outter">
+      <div id="company-request-header-outter">
+          <h1 class="text-light">Leave the request</h1>
+      </div>
+      <div id="company-request-body-outter">
+          <p>
+              You can contact us throw this form and we will help you solve your problem or suggestion.
+          </p>
+      </div>
+      <div id="company-request-contacts">
+          <div id="request-phone">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+79000000000" class="text-light">8-800-000-00-00</a>
+          </div>
+          <div id="request-mail">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:example@mail.com" class="text-light">example&#64;mail.com</a>
+          </div>
+      </div>
+  </div>
+  <div id="company-request-form-outter">
+      <form id="feedback-form" [formGroup]="applyForm" accept-charset="UTF-8" (submit)="submitApplication()">
+          <div id="form-name" class="input-outter">
+              <input type="text" name="user-name" id="user-name" class="local-save" required placeholder="Your name" formControlName="name" (change)="onChange($event)">
+          </div>
+          <div id="form-phone" class="input-outter">
+              <input type="tel" name="user-phone" id="user-phone" class="local-save" placeholder="Your phone" formControlName="phone" (change)="onChange($event)">
+          </div>
+          <div id="form-email" class="input-outter">
+              <input type="email" name="user-email" id="user-email" class="local-save" placeholder="Your email" formControlName="email" (change)="onChange($event)">
+          </div>
+          <div id="form-message" class="input-outter">
+              <textarea name="user-message" id="user-message" rows="5" class="local-save" required placeholder="Your message" formControlName="message" (change)="onChange($event)"></textarea>
+          </div>
+          <div id="form-acception">
+              <input type="checkbox" name="user-acception" id="user-acception" class="local-save" required checked formControlName="acception" (change)="onChange($event)">
+              <label for="user-acception">I accept politics privacy.</label>
+          </div>
+          <div id="submit-button-outter">
+              <button type="submit" id="submit-button">Submit</button>
+          </div>
+      </form>
+  </div>
+</section>

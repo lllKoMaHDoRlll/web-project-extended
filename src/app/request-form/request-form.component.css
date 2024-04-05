@@ -1,0 +1,147 @@
+#company-request {
+  margin-top: 2rem;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 10%;
+}
+
+#company-request-content-outter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#company-request-header-outter {
+  font-size: 20pt;
+}
+
+#company-request-body-outter {
+  margin-bottom: 3rem;
+  font-size: 14pt;
+  color: #aaa;
+}
+
+#company-request-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#request-phone {
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+#request-phone,
+#request-mail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#request-phone>i,
+#request-mail>i {
+  color: #fff;
+  font-size: 16pt;
+}
+
+#request-phone>a {
+  text-decoration: none;
+}
+
+#request-mail>a {
+  font-size: 16pt;
+  margin-bottom: 1rem;
+}
+
+#company-request-form-outter {
+  width: 100%;
+}
+
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#feedback-form input,
+#feedback-form textarea,
+#feedback-form button {
+  font-size: 16pt;
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #999;
+  background-color: transparent;
+  color: #fff;
+  transition: 0.4s;
+  outline: none;
+}
+
+#feedback-form textarea {
+  resize: none;
+}
+
+#feedback-form input:focus,
+#feedback-form textarea:focus {
+  border: 2px solid #f00;
+  box-shadow: 0px 0px 40px 10px rgba(255, 0, 0, 0.4);
+}
+
+#feedback-form input[type="checkbox"] {
+  width: unset;
+  transform: scale(1.5);
+}
+
+#form-acception {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#form-acception>label {
+  font-size: 18pt;
+  color: #aaa;
+}
+
+#submit-button {
+  background-color: var(--acc-color) !important;
+  border: 1px solid var(--acc-color) !important;
+  color: #fff;
+}
+
+@media screen and (width >=880px) {
+  #company-request {
+    margin-top: 8rem;
+    flex-direction: row;
+  }
+
+  #company-request-content-outter {
+    width: 35%;
+  }
+
+  #company-request-header-outter {
+    font-size: 30pt;
+  }
+
+  #company-request-body-outter {
+    margin-bottom: 10rem;
+    font-size: 14pt;
+    color: #aaa;
+  }
+
+  #request-phone {
+    font-size: 26pt;
+  }
+
+  #request-mail>a {
+    font-size: 20pt;
+    margin-bottom: 0;
+  }
+
+  #company-request-form-outter {
+    width: 35%;
+  }
+}
